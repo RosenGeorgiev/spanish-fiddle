@@ -32,7 +32,7 @@ const words = {
         "la piel": "кожа",
         "amable": "любезен/а",
         "grosero/a": "груб/а",
-        "agradable": "приятен/а"
+        "agradable": "приятен/а",
         "desagradable": "неприятен/а",
         "guapo/a": "хубав/а",
         "feo/a": "грозен/а",
