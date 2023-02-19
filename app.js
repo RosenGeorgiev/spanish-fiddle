@@ -18,6 +18,12 @@ class app {
 
             new word_randomizer(unidad_element, words['unidad_1']);
         };
+        document.getElementById('unidad_2_btn').onclick = () => {
+            main_menu_element.setAttribute('hidden', '');
+            unidad_element.removeAttribute('hidden');
+
+            new word_randomizer(unidad_element, words['unidad_2']);
+        };
         document.getElementById('word_table_btn').onclick = () => {
             main_menu_element.setAttribute('hidden', '');
             unidad_element.removeAttribute('hidden');
