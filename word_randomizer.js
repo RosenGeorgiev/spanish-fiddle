@@ -36,7 +36,14 @@ class word_randomizer {
         document.getElementById('submit_btn').onclick = () => {
             const translated_word = document.getElementById('translation_input').value;
 
-            if (translated_word !== this.word_map[this.curr_word]) {
+            if (Array.isArray(this.word_map[this.curr_word])) {
+                if (!this.word_map[this.curr_word].includes(translated_word)) {
+                    document.getElementById('untranslated_word').textContent = this.curr_word;
+                    document.getElementById('translated_word').textContent = this.word_map[this.curr_word];
+
+                    this.myModal.show();
+                }
+            } else if (translated_word !== this.word_map[this.curr_word]) {
                 document.getElementById('untranslated_word').textContent = this.curr_word;
                 document.getElementById('translated_word').textContent = this.word_map[this.curr_word];
 
